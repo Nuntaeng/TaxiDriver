@@ -1,5 +1,5 @@
-#include "UserInclude.h"
-
+#include "AppDelegate.h"
+#include "GameScene.h"
 
 
 void AppDelegate::initGLContextAttrs() {
@@ -24,7 +24,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->setAnimationInterval(1.0f / 60);
     glview->setDesignResolutionSize(GAME_WIDTH, GAME_HEIGHT, ResolutionPolicy::NO_BORDER);
     
-    auto scene = HelloWorld::createScene();
+    auto scene = GameScene::create();
     director->runWithScene(scene);
 
     return true;
