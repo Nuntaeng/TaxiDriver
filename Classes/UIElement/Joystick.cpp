@@ -1,10 +1,3 @@
-//
-//  Joystick.cpp
-//  Survive
-//
-//  Created by 김희원 on 2018. 4. 28..
-//
-
 #include "Joystick.h"
 
 

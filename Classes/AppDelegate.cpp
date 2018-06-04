@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "GameScene.h"
+#include "TestScene.h"
 #include "Constant.h"
 
 
@@ -25,7 +26,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->setAnimationInterval(1.0f / 60);
     glview->setDesignResolutionSize(Constant::RES_WIDTH, Constant::RES_HEIGHT, ResolutionPolicy::NO_BORDER);
     
-    auto scene = GameScene::create();
+    // auto scene = GameScene::create();
+    auto scene = TestScene::createScene();
     director->runWithScene(scene);
 
     return true;

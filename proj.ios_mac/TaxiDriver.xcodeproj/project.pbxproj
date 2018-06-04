@@ -59,6 +59,10 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		A88425E820C59289004F1775 /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A88425E620C59289004F1775 /* TestScene.cpp */; };
+		A88425E920C59289004F1775 /* TestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A88425E620C59289004F1775 /* TestScene.cpp */; };
+		A88425EE20C5942D004F1775 /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A88425EC20C5942D004F1775 /* Car.cpp */; };
+		A88425EF20C5942D004F1775 /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A88425EC20C5942D004F1775 /* Car.cpp */; };
 		A8C451F020C43194007E92E3 /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C451EB20C43194007E92E3 /* Joystick.cpp */; };
 		A8C451F120C43194007E92E3 /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C451EB20C43194007E92E3 /* Joystick.cpp */; };
 		A8C451F620C43203007E92E3 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C451F420C43203007E92E3 /* GameScene.cpp */; };
@@ -163,6 +167,10 @@
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A88425E620C59289004F1775 /* TestScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestScene.cpp; sourceTree = "<group>"; };
+		A88425E720C59289004F1775 /* TestScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		A88425EC20C5942D004F1775 /* Car.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Car.cpp; sourceTree = "<group>"; };
+		A88425ED20C5942D004F1775 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		A8C451EB20C43194007E92E3 /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
 		A8C451EF20C43194007E92E3 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		A8C451F420C43203007E92E3 /* GameScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
@@ -314,6 +322,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A88425EB20C5941D004F1775 /* Actor */,
 				A8C451F320C431ED007E92E3 /* Scene */,
 				A8C451F220C43198007E92E3 /* UIElement */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -371,6 +380,15 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		A88425EB20C5941D004F1775 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				A88425EC20C5942D004F1775 /* Car.cpp */,
+				A88425ED20C5942D004F1775 /* Car.h */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
 		A8C451F220C43198007E92E3 /* UIElement */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +404,8 @@
 				A8C451F920C43466007E92E3 /* Layer */,
 				A8C451F420C43203007E92E3 /* GameScene.cpp */,
 				A8C451F520C43203007E92E3 /* GameScene.h */,
+				A88425E620C59289004F1775 /* TestScene.cpp */,
+				A88425E720C59289004F1775 /* TestScene.h */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -548,8 +568,10 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				A88425E820C59289004F1775 /* TestScene.cpp in Sources */,
 				A8C451F620C43203007E92E3 /* GameScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				A88425EE20C5942D004F1775 /* Car.cpp in Sources */,
 				A8C451F020C43194007E92E3 /* Joystick.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,8 +580,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88425EF20C5942D004F1775 /* Car.cpp in Sources */,
 				A8C451F720C43203007E92E3 /* GameScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				A88425E920C59289004F1775 /* TestScene.cpp in Sources */,
 				A8C451F120C43194007E92E3 /* Joystick.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 			);

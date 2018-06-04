@@ -1,13 +1,4 @@
-//
-//  Joystick.hpp
-//  Survive
-//
-//  Created by 김희원 on 2018. 4. 28..
-//
-
-#ifndef Joystick_hpp
-#define Joystick_hpp
-
+#pragma once
 #include "cocos2d.h"
 USING_NS_CC;
 
@@ -63,6 +54,3 @@ private:
     Sprite* innerCircle;
     Sprite* outerCircle;
 };
-
-
-#endif /* Joystick_hpp */
