@@ -14,9 +14,7 @@ public:
     explicit Car() {}
     virtual ~Car() {}
     
-    virtual bool init() override;
     
-    CREATE_FUNC(Car);
 private:
     
 };
